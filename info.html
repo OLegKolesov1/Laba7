@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лабораторная работа 6</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style3.css">
+</head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg mb-4">
+              <div class="container-fluid">
+                <h1 class="navbar-brand">Павел Прилучный</h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="info.html">Информация</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="films.html">Фильмы</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <div class="row">
+              <div class="col-3">
+                <aside>
+                  <h5>Навигация</h5>
+                  <div class="scrollspy_container">
+                    <div class="row">
+                      <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action" href="#carouselExampleCaptions">Карусель с Фотографиями</a>
+                        <a class="list-group-item list-group-item-action" href="#cards_container">Карточки с фильмами</a>
+                        <a class="list-group-item list-group-item-action" href="#collapse_container">Об актёре</a>
+                      </div>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+
+            <div class="col-9">
+              <div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner" id="carouselExampleCaptions">
+                  <div class="carousel-item active">
+                      <img src="pasha1.jpeg" class="d-block w-100" alt="Фото 1">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="pasha2.jpeg" class="d-block w-100" alt="Фото 2">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="pasha3.jpeg" class="d-block w-100" alt="Фото 3">
+                  </div>
+                  <div class="carousel-item">
+                      <img src="pasha4.jpeg" class="d-block w-100" alt="Фото 4">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Предыдущая</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Следующая</span>
+                </button>
+              </div>
+
+              <div class="row row-cols-1 row-cols-md-2 g-4 mb-4" id="cards_container">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="poster1.jpg" class="card-img-top" alt="Жизнь по вызову">
+                        <div class="card-body">
+                        <h5 class="card-title">Жизнь по вызову</h5>
+                        <p class="card-text">Александр Шмидт — хозяин элитного эскорт-агентства. Его называют Мэджик — он и его команда способны выполнить практически любое желание. Среди клиентов уважаемые люди: бизнесмены, политики, силовики, общественные деятели. Команда — в лице бывшего бандита по кличке Рыбак и секретаря Галины Михайловны — исполняет любые капризы клиентов. 
+                          Но внезапно сказка заканчивается: на Мэджика и его бизнес объявлена охота. В один миг он может потерять все — репутацию, бизнес, семью и даже жизнь. У него есть немного времени, чтобы разобраться, кто стоит за этой атакой, и нанести удар первым.</p>
+                        </div>
+                        <div class="card-footer">
+                        <a href="https://www.kinopoisk.ru/series/4640303/" class="btn btn-primary" target="_blank">Перейти к просмотру</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="poster2.jpg" class="card-img-top" alt="На игре">
+                        <div class="card-body">
+                        <h5 class="card-title">На игре</h5>
+                        <p class="card-text">После оглушительной победы на турнире по киберспорту команде геймеров вручают диски с только что разработанной игрой. Запустив игру, каждый из них подвергается воздействию, переводящему их игровые способности в реальные. Теперь и в жизни они лучшие бойцы, стрелки и гонщики.
+
+                          Данное событие не остается незамеченным. Властные структуры путем шантажа, обмана и подкупа предлагают геймерам «работу». Но как только обман раскрывается, становится понятно, что они не герои, спасающие страну, а банальные наемные убийцы. Встает вопрос: как быть дальше? К тому же дисков у производителя еще много, и появление таких же, как они, профи – это вопрос времени.
+                          
+                          Теперь перед геймерами стоит задача найти тираж и… либо уничтожить его, либо, создав и возглавив целую армию геймеров, диктовать свою волю... Команда разделилась. Каждый идет к своей цели.</p>
+                        </div>
+                        <div class="card-footer">
+                        <a href="https://www.kinopoisk.ru/film/424516/" class="btn btn-primary" target="_blank">Перейти к просмотру</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="poster3.jpg" class="card-img-top" alt="Мажор">
+                        <div class="card-body">
+                        <h5 class="card-title">Мажор</h5>
+                        <p class="card-text">Таких, как наш главный герой Игорь Соколовский, то есть детей высокопоставленных, богатых родителей, называют мажорами. Наш герой имеет юридическое образование, но ни одного дня не проработал. Безответственный прожигатель жизни. В один из загулов ночью он вступился за приятеля, подрался с полицейскими, выбил табельное оружие у офицера... В итоге отец лишает героя всего и отправляет работать в отделение полиции - то самое, в котором служат ночные полицейские. Его, мажора, там не ждут. Его презирают. Но именно там он начнет становиться мужчиной, встретит свою любовь и найдет убийцу мамы.</p>
+                        </div>
+                        <div class="card-footer">
+                        <a href="https://www.kinopoisk.ru/series/820638/" class="btn btn-primary" target="_blank">Перейти к просмотру</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="poster4.jpg" class="card-img-top" alt="Девятаев">
+                        <div class="card-body">
+                            <h5 class="card-title">Девятаев</h5>
+                            <p class="card-text">Лето 1944 года. Советские войска ведут наступление, но враг еще очень силен. Летчик-истребитель Михаил Девятаев попадает в плен. Ему предстоит сделать выбор — вернуться в небо, продолжив войну на стороне врага, или отправиться в концлагерь на остров Узедом. Отчаянный ас Девятаев выбирает третье — побег. Но с засекреченного острова, где идут испытания немецких крылатых ракет, нельзя убежать. Зато можно улететь — на аэродроме стоит новейший вражеский бомбардировщик с «оружием возмездия» Третьего рейха на борту. Улететь — и совершить самый дерзкий побег в военной истории.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://www.kinopoisk.ru/film/1249213/" class="btn btn-primary" target="_blank">Перейти к просмотру</a>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item" id="collapse_container">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Биография
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <p>Российский актёр театра, кино и дубляжа, телеведущий и продюсер<br>
+                                  Полное имя — <mark>Прилучный Павел Валерьевич</mark><br>
+                                  Родился 5 ноября 1987 года в Чимкенте Чимкентской области Казахской ССР. Отец — Валерий Дэль, боксёр (умер, когда Павлу было 13 лет). Мать — Любовь Юрьевна Прилучная, хореограф. Есть старший брат Сергей и сестра Елена.
+                                  С детства занимался хореографией, вокалом и боксом. После смерти отца переехал в Россию, в город Бердск Новосибирской области, причём уехал один, без матери. В юношеские годы занимался боксом. Во время тренировок получил около десяти сотрясений мозга. В 2001 году, в возрасте 14 лет закончил с этим видом спорта.
+                                  В Новосибирске работал курьером и грузчиком, параллельно поступил в хореографическое училище, но вскоре ушёл оттуда из-за финансовых трудностей. После этого поступил в Новосибирское государственное театральное училище (курс В. А. Ахреева; бюджетное обучение), которое окончил в 2005 году.
+                                  В 2010 году окончил очное отделение режиссёрского факультета по специальности «Актёрское искусство» Российской академии театрального искусства (ГИТИС) в Москве (мастерская Сергея Голомазова).
+                                  Сразу после окончания института был принят в труппу Московского театра на Малой Бронной. Затем работал в Московском театре имени А. С. Пушкина и в Театре имени М. А. Булгакова («Булгаковский дом»).
+                                  Получил широкую известность после выхода на экраны боевика режиссёра Павла Санаева «На игре» (2009), где исполнил роль «Дока». В начале 2010 года снялся в сиквеле «На игре 2. Новый уровень».
+                                  Со 2 июля по 19 августа 2011 года участвовал в программе «Чета Пиночетов» на телеканале «НТВ».
+В 2014 году снялся в главной роли в остросюжетном детективно-криминальном телесериале «Мажор» — в роли «мажора» Игоря Соколовского, неожиданно попадающего на службу в оперативный отдел полиции. За эту актёрскую работу Павел Прилучный получил несколько профессиональных наград, а газета «Комсомольская правда» 8 января 2015 года назвала актёра «открытием 2014 года».
+ В октябре 2016 года «Мажор», имевший высокий зрительский рейтинг, стал первым российским сериалом, права на трансляцию которого под названием «Silver Spoon» приобрёл американский сервис «Netflix». 
+Успех первого сезона сериала сподвиг его создателей на выпуск продолжений: «Мажор 2» (премьера — 14 ноября 2016 года), «Мажор 3» (29 октября 2018 года), «Мажор 4» (2 июля 2022 года); а также полнометражные фильмы «Мажор. Фильм» (2 января 2021 г.) и «Мажор в Сочи» (22 декабря 2022 г.) с Павлом Прилучным в главной роли.
+С 16 сентября по 23 декабря 2017 года — ведущий развлекательного шоу «Короли фанеры» на «Первом канале»
+                      </div>
+                  </div>
+              </div>
+            </div>
+      </div>
+</body>
+</html>
